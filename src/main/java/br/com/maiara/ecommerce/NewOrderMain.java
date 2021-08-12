@@ -13,7 +13,6 @@ import java.util.concurrent.ExecutionException;
 public class NewOrderMain {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
        var dispatcher = new KafkaDispatcher();
        var key = UUID.randomUUID().toString(); //UUID faz com que a mensagem seja diferente, então o costumer será uma partição distinta
        var value = key + ", 8787878788788, 123456"; //mensagem
