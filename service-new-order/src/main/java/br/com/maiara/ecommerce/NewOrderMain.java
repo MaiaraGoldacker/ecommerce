@@ -20,7 +20,6 @@ public class NewOrderMain {
         orderDispatcher.send("ECOMMERCE_NEW_ORDER", userId, order);
 
        var emailKey = "welcome to email service!";
-       //var email = new Email(emailKey, emailKey);
        emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userId, emailKey);
     }
 }
